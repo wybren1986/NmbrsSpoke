@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:emp="https://api.nmbrs.nl/soap/v2.1/EmployeeService">
+   <soapenv:Header>
+      <emp:AuthHeader>
+         <!--Optional:-->
+         <emp:Username>${AuthHeader.Username}</emp:Username>
+         <!--Optional:-->
+         <emp:Token>${AuthHeader.Token}</emp:Token>
+      </emp:AuthHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <emp:PersonalInfo_UpdateCurrent>
+         <emp:EmployeeId>${PersonalInfo_UpdateCurrent.EmployeeId}</emp:EmployeeId>
+         <!--Optional:-->
+         <emp:PersonalInfo>
+            <emp:Id>${PersonalInfo.Id}</emp:Id>
+            <emp:Number>${PersonalInfo.Number}</emp:Number>
+            <!--Optional:-->
+            <emp:DisplayName>${PersonalInfo.DisplayName}</emp:DisplayName>
+            <!--Optional:-->
+            <emp:EmployeeNumber>${PersonalInfo.EmployeeNumber}</emp:EmployeeNumber>
+            <!--Optional:-->
+            <emp:BSN>${PersonalInfo.BSN}</emp:BSN>
+            <!--Optional:-->
+            <emp:Title>${PersonalInfo.Title}</emp:Title>
+            <!--Optional:-->
+            <emp:FirstName>${PersonalInfo.FirstName}</emp:FirstName>
+            <!--Optional:-->
+            <emp:Initials>${PersonalInfo.Initials}</emp:Initials>
+            <!--Optional:-->
+            <emp:Prefix>${PersonalInfo.Prefix}</emp:Prefix>
+            <!--Optional:-->
+            <emp:LastName>${PersonalInfo.LastName}</emp:LastName>
+            <!--Optional:-->
+            <emp:Nickname>${PersonalInfo.Nickname}</emp:Nickname>
+            <!--Optional:-->
+            <emp:Gender>${PersonalInfo.Gender}</emp:Gender>
+            <!--Optional:-->
+            <emp:NationalityCode>${PersonalInfo.NationalityCode}</emp:NationalityCode>
+            <!--Optional:-->
+            <emp:PlaceOfBirth>${PersonalInfo.PlaceOfBirth}</emp:PlaceOfBirth>
+            <!--Optional:-->
+            <emp:CountryOfBirthISOCode>${PersonalInfo.CountryOfBirthISOCode}</emp:CountryOfBirthISOCode>
+            <!--Optional:-->
+            <emp:IdentificationNumber>${PersonalInfo.IdentificationNumber}</emp:IdentificationNumber>
+            <emp:IdentificationType>${PersonalInfo.IdentificationType}</emp:IdentificationType>
+            <!--Optional:-->
+            <emp:PartnerPrefix>${PersonalInfo.PartnerPrefix}</emp:PartnerPrefix>
+            <!--Optional:-->
+            <emp:PartnerLastName>${PersonalInfo.PartnerLastName}</emp:PartnerLastName>
+            <!--Optional:-->
+            <emp:TelephonePrivate>${PersonalInfo.TelephonePrivate}</emp:TelephonePrivate>
+            <!--Optional:-->
+            <emp:TelephoneWork>${PersonalInfo.TelephoneWork}</emp:TelephoneWork>
+            <!--Optional:-->
+            <emp:TelephoneMobilePrivate>${PersonalInfo.TelephoneMobilePrivate}</emp:TelephoneMobilePrivate>
+            <!--Optional:-->
+            <emp:TelephoneMobileWork>${PersonalInfo.TelephoneMobileWork}</emp:TelephoneMobileWork>
+            <!--Optional:-->
+            <emp:TelephoneOther>${PersonalInfo.TelephoneOther}</emp:TelephoneOther>
+            <!--Optional:-->
+            <emp:EmailPrivate>${PersonalInfo.EmailPrivate}</emp:EmailPrivate>
+            <!--Optional:-->
+            <emp:EmailWork>${PersonalInfo.EmailWork}</emp:EmailWork>
+            <!--Optional:-->
+            <emp:BurgerlijkeStaat>${PersonalInfo.BurgerlijkeStaat}</emp:BurgerlijkeStaat>
+            <!--Optional:-->
+            <emp:Naamstelling>${PersonalInfo.Naamstelling}</emp:Naamstelling>
+            <!--Optional:-->
+            <emp:Birthday>${PersonalInfo.Birthday}</emp:Birthday>
+            <!--Optional:-->
+            <emp:DeceasedDate>${PersonalInfo.DeceasedDate}</emp:DeceasedDate>
+            <!--Optional:-->
+            <emp:InCaseOfEmergency>${PersonalInfo.InCaseOfEmergency}</emp:InCaseOfEmergency>
+            <!--Optional:-->
+            <emp:InCaseOfEmergencyPhone>${PersonalInfo.InCaseOfEmergencyPhone}</emp:InCaseOfEmergencyPhone>
+            <!--Optional:-->
+            <emp:InCaseOfEmergencyRelation>${PersonalInfo.InCaseOfEmergencyRelation}</emp:InCaseOfEmergencyRelation>
+            <!--Optional:-->
+            <emp:TitleAfter>${PersonalInfo.TitleAfter}</emp:TitleAfter>
+         </emp:PersonalInfo>
+      </emp:PersonalInfo_UpdateCurrent>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>EmployeeServiceSoap.PersonalInfo_UpdateCurrent</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>Nmbrs - Employee Service [ EmployeeServiceSoap.PersonalInfo_UpdateCurrent ]</qualified_name>
+        <soap_action>https://api.nmbrs.nl/soap/v2.1/EmployeeService/PersonalInfo_UpdateCurrent</soap_action>
+        <soap_endpoint>https://api.nmbrs.nl/soap/v2.1/EmployeeService.asmx</soap_endpoint>
+        <soap_message display_value="Nmbrs - Employee Service">df53a77b1b4d4c1057a864a07e4bcb78</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-18 12:12:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3d63a3bb1b4d4c1057a864a07e4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EmployeeServiceSoap.PersonalInfo_UpdateCurrent</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_soap_message_function_3d63a3bb1b4d4c1057a864a07e4bcb90</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-18 12:12:00</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="INSERT_OR_UPDATE">
+        <connection_type>http_connection</connection_type>
+        <id>x_bocn_nmbrs_spoke.Nmbrs</id>
+        <multiple_connections>false</multiple_connections>
+        <name>Nmbrs</name>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-18 11:59:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3980a77b1b0d4c1057a864a07e4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_bocn_nmbrs_spoke.Nmbrs</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_alias_3980a77b1b0d4c1057a864a07e4bcb9f</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-18 11:59:43</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+</record_update>

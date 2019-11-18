@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:emp="https://api.nmbrs.nl/soap/v2.1/EmployeeService">
+   <soapenv:Header>
+      <emp:AuthHeader>
+         <!--Optional:-->
+         <emp:Username>${AuthHeader.Username}</emp:Username>
+         <!--Optional:-->
+         <emp:Token>${AuthHeader.Token}</emp:Token>
+      </emp:AuthHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <emp:Manager_Get>
+         <emp:EmployeeId>${Manager_Get.EmployeeId}</emp:EmployeeId>
+         <emp:Period>${Manager_Get.Period}</emp:Period>
+         <emp:Year>${Manager_Get.Year}</emp:Year>
+      </emp:Manager_Get>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>EmployeeServiceSoap.Manager_Get</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>Nmbrs - Employee Service [ EmployeeServiceSoap.Manager_Get ]</qualified_name>
+        <soap_action>https://api.nmbrs.nl/soap/v2.1/EmployeeService/Manager_Get</soap_action>
+        <soap_endpoint>https://api.nmbrs.nl/soap/v2.1/EmployeeService.asmx</soap_endpoint>
+        <soap_message display_value="Nmbrs - Employee Service">df53a77b1b4d4c1057a864a07e4bcb78</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-18 12:11:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9c6323bb1b4d4c1057a864a07e4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EmployeeServiceSoap.Manager_Get</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_soap_message_function_9c6323bb1b4d4c1057a864a07e4bcb0d</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-18 12:11:54</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>
