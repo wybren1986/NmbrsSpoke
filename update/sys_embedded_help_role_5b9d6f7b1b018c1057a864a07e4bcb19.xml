@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
-        <role display_value="sn_dd_nmbrsspoke_integrations" name="sn_dd_nmbrsspoke_integrations">d79d6f7b1b018c1057a864a07e4bcb17</role>
+        <role display_value="sn_dd_nmbrsspoke_integrations" name="sn_dd_nmbrsspoke_integrations">c87eeb73dbc1cc108dc6f9971d96196f</role>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
         <sys_created_on>2019-11-18 12:56:37</sys_created_on>

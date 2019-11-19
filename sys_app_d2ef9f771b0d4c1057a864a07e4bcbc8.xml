@@ -2,12 +2,12 @@
     <sys_app action="INSERT_OR_UPDATE">
         <active>true</active>
         <can_edit_in_studio>false</can_edit_in_studio>
-        <enforce_license>none</enforce_license>
+        <enforce_license>enforce</enforce_license>
         <guided_setup_guid/>
         <js_level>helsinki_es5</js_level>
         <licensable>true</licensable>
         <license_category>none</license_category>
-        <license_model>none</license_model>
+        <license_model>app_use</license_model>
         <logo>62efdfb71b0d4c1057a864a07e4bcb66</logo>
         <menu/>
         <name>Nmbrs Spoke</name>
@@ -25,9 +25,9 @@
         <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
         <sys_created_on>2019-11-18 11:56:45</sys_created_on>
         <sys_id>d2ef9f771b0d4c1057a864a07e4bcbc8</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
-        <sys_updated_on>2019-11-18 12:52:53</sys_updated_on>
+        <sys_updated_on>2019-11-18 14:48:03</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>
