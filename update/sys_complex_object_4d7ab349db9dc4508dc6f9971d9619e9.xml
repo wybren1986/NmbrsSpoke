@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD897ab3491a9dc450901e5e701d7391e9</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>d2ef9f771b0d4c1057a864a07e4bcbc8</scope_name>
+        <serialized_content>{"FlowDesigner:FD897ab3491a9dc450901e5e701d7391e9":{"Body":{"List_GetByCompanyResponse":{"List_GetByCompanyResult":{"array_of_Employee":[{"$32_array_of_Employee":{"Number":"String","Number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Number\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"DisplayName":"String","DisplayName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"DisplayName\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"Id":"String","Id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"array_of_Employee.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"array_of_Employee\",\"mandatory\":\"false\",\"child_name\":\"Employee\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"Employee\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}},"List_GetByCompanyResult.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"List_GetByCompanyResult\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"List_GetByCompanyResponse.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"List_GetByCompanyResponse\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"Body.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Body\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FD897ab3491a9dc450901e5e701d7391e9.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD897ab3491a9dc450901e5e701d7391e9\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Envelope\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-22 11:05:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>4d7ab349db9dc4508dc6f9971d9619e9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>FD897ab3491a9dc450901e5e701d7391e9</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_complex_object_4d7ab349db9dc4508dc6f9971d9619e9</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-22 11:24:34</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

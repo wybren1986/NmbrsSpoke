@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="DELETE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Notification" name="Notification">9506bd98db6103009b2afda41d96195c</category>
+        <collection/>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>alert_priority.calc_priority_grouping</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>triggered</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text/>
+        <name>Nmbrs - Missende gebruikers</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="ServiceNow - Functioneel beheer">1cc3092edb780f409b2afda41d961945</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Nmbrs Integratie - Missende ID van gebruikers</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-19 21:51:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2941b610dbd5c050f7b4f7461d961900</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Nmbrs - Missende gebruikers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sysevent_email_action_2941b610dbd5c050f7b4f7461d961900</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-19 21:52:32</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="BNC Deltoid - Default">5ce1dc2fdb6f7f408dc6f9971d96195a</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</application>
+        <file_path/>
+        <instance_id>81eac523dbe3a2007d8cf22ebf9619cd</instance_id>
+        <instance_name>bnctest</instance_name>
+        <name>sysevent_email_action_2941b610dbd5c050f7b4f7461d961900</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Notification" name="Notification"&gt;9506bd98db6103009b2afda41d96195c&lt;/category&gt;&lt;collection/&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;event_name&gt;alert_priority.calc_priority_grouping&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;triggered&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html/&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Nmbrs - Missende gebruikers&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups name="ServiceNow - Functioneel beheer"&gt;1cc3092edb780f409b2afda41d961945&lt;/recipient_groups&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Nmbrs Integratie - Missende ID van gebruikers&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wybren.vanbeemdelust@bnc.nl&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-11-19 21:51:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2941b610dbd5c050f7b4f7461d961900&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Nmbrs - Missende gebruikers&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke"&gt;d2ef9f771b0d4c1057a864a07e4bcbc8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Nmbrs Spoke"&gt;d2ef9f771b0d4c1057a864a07e4bcbc8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_2941b610dbd5c050f7b4f7461d961900&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wybren.vanbeemdelust@bnc.nl&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-11-19 21:52:32&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="BNC Deltoid - Default"&gt;5ce1dc2fdb6f7f408dc6f9971d96195a&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-922476776</payload_hash>
+        <record_name>Nmbrs - Missende gebruikers</record_name>
+        <reverted_from/>
+        <source>04427337dbc1cc108dc6f9971d96190d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-19 21:52:32</sys_created_on>
+        <sys_id>e7d1b610dbd5c050f7b4f7461d96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e85a71fed0000001</sys_recorded_at>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-19 21:52:32</sys_updated_on>
+        <type>Notification</type>
+        <update_guid>afd1b610bdd5c050c9471f394f814849</update_guid>
+        <update_guid_history>afd1b610bdd5c050c9471f394f814849:-922476776,3391365067d5c050469afa9a44f178ef:-55550400</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-19 21:54:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sysevent_email_action">sysevent_email_action</sys_db_object>
+        <sys_id>1e4b7ecbf58344d4844055402dbd0bc4</sys_id>
+        <sys_metadata>2941b610dbd5c050f7b4f7461d961900</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Nmbrs - Missende gebruikers</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_parent display_value="">ec460574db24320038b9fb971d96194a</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_scope_delete display_value="">11b272dcbd134ec78aad70cd24622c59</sys_scope_delete>
+        <sys_update_name>sysevent_email_action_2941b610dbd5c050f7b4f7461d961900</sys_update_name>
+        <sys_update_version display_value="sysevent_email_action_2941b610dbd5c050f7b4f7461d961900">e7d1b610dbd5c050f7b4f7461d96194a</sys_update_version>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-19 21:54:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

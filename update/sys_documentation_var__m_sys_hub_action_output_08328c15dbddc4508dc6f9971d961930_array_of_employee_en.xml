@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="array_of_employee" label="All Employees" language="en" table="var__m_sys_hub_action_output_08328c15dbddc4508dc6f9971d961930">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>array_of_employee</element>
+            <help/>
+            <hint/>
+            <label>All Employees</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_08328c15dbddc4508dc6f9971d961930</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+            <sys_created_on>2019-11-22 11:38:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9c32c4d5dbddc4508dc6f9971d96196c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>All Employees</sys_name>
+            <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_08328c15dbddc4508dc6f9971d961930_array_of_employee_en</sys_update_name>
+            <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+            <sys_updated_on>2019-11-22 11:38:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

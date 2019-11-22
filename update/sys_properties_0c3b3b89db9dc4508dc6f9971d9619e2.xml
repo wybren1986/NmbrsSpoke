@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Default company id for nmbrs integration</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_bocn_nmbrs_spoke.bnc.nmbrs.companyid</name>
+        <read_roles/>
+        <suffix>bnc.nmbrs.companyid</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-22 11:08:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0c3b3b89db9dc4508dc6f9971d9619e2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_bocn_nmbrs_spoke.bnc.nmbrs.companyid</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_properties_0c3b3b89db9dc4508dc6f9971d9619e2</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-22 11:21:31</sys_updated_on>
+        <type>string</type>
+        <value/>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=0c3b3b89db9dc4508dc6f9971d9619e2"/>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-11-22 11:33:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>59e0cc15dbddc4508dc6f9971d9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Glide API: string utilities</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_scope_privilege_59e0cc15dbddc4508dc6f9971d9619c6</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-11-22 11:33:15</sys_updated_on>
+        <target_name>Glide API: string utilities</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>
