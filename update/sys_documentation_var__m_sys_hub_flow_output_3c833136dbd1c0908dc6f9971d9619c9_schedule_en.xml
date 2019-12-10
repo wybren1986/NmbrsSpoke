@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="schedule" label="Schedule" language="en" table="var__m_sys_hub_flow_output_3c833136dbd1c0908dc6f9971d9619c9">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>schedule</element>
+            <help/>
+            <hint/>
+            <label>Schedule</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_3c833136dbd1c0908dc6f9971d9619c9</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-11-27 11:44:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b8833136dbd1c0908dc6f9971d9619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Schedule</sys_name>
+            <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_3c833136dbd1c0908dc6f9971d9619c9_schedule_en</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-11-27 11:44:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>gs.getUserID() == current.getUniqueValue() || gs.hasRole('timecard_admin,timecard_approver')</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Get Time schedule</name>
+        <onclick/>
+        <order>300</order>
+        <script><![CDATA[try {
+	var inputs = {};
+	inputs['usersysid'] = current.getUniqueValue(); // String 
+
+	// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+	var outputs = sn_fd.FlowAPI.executeSubflow('x_bocn_nmbrs_spoke.set_employee_schedule', inputs);
+
+	var schedule = outputs['schedule']; // String
+	current.u_schedule = schedule;
+	current.update();
+
+} catch (ex) {
+	var message = ex.getMessage();
+	gs.error(message);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:29:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9f6ee57adb91c0908dc6f9971d961922</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Get Time schedule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_ui_action_9f6ee57adb91c0908dc6f9971d961922</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 13:11:15</sys_updated_on>
+        <table>sys_user</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

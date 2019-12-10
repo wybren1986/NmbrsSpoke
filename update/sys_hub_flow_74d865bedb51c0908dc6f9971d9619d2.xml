@@ -1,0 +1,1392 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Employee Service">fb326f731b4d4c1057a864a07e4bcba1</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get the schedule for the employee and set it in the user object</description>
+        <internal_name>set_employee_schedule</internal_name>
+        <label_cache>[{"name":"603e99b0-5a3f-4c77-b126-2805313f7154.schedule","label":"2➛Schedule","reference_display":"Schedule","type":"object","base_type":"object"},{"name":"603e99b0-5a3f-4c77-b126-2805313f7154.statuscode","label":"2➛Status Code","reference_display":"Status Code","type":"string","base_type":"string"},{"name":"603e99b0-5a3f-4c77-b126-2805313f7154.schedulestring","label":"2➛ScheduleString","reference_display":"ScheduleString","type":"string","base_type":"string"},{"name":"02cf1aed-d6b7-438b-9631-0d03613434d3.Record","label":"1➛Integration Link Record","reference":"u_integration_link","reference_display":"Integration Link","type":"reference","base_type":"reference"},{"name":"02cf1aed-d6b7-438b-9631-0d03613434d3.Table","label":"1➛Integration Link Table","reference":"u_integration_link","reference_display":"Integration Link","type":"table_name","base_type":"table_name"},{"name":"subflow.usersysid","label":"Input➛UserSysId","reference":"","reference_display":"","type":"string","base_type":"string"},{"name":"603e99b0-5a3f-4c77-b126-2805313f7154.response_body","label":"2➛Response Body","reference_display":"Response Body","type":"xml","base_type":"xml"},{"name":"02cf1aed-d6b7-438b-9631-0d03613434d3.Record.u_integration_id","label":"1➛Integration Link Record➛Integration Link ID","reference":"","reference_display":"Integration Link ID","type":"string","base_type":"string","parent_table_name":"u_integration_link","column_name":"u_integration_id"}]</label_cache>
+        <latest_snapshot>6b17ca3adb55c0908dc6f9971d961971</latest_snapshot>
+        <master_snapshot>32bbedf2db91c0908dc6f9971d96193c</master_snapshot>
+        <name>Get Employee Schedule</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 10:58:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>74d865bedb51c0908dc6f9971d9619d2</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Get Employee Schedule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_hub_flow_74d865bedb51c0908dc6f9971d9619d2</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:11</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=74d865bedb51c0908dc6f9971d9619d2"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=74d865bedb51c0908dc6f9971d9619d2^sys_idNOT IN0289e9fedb51c0908dc6f9971d9619b8,0289e9fedb51c0908dc6f9971d9619bd,e4bb6df2db91c0908dc6f9971d961999"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">bf0256c10b30030085c083eb37673ac0</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>bf0256c10b30030085c083eb37673ac0</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0289e9fedb51c0908dc6f9971d9619b8</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-11-27 13:10:35</sys_updated_on>
+        <ui_id>02cf1aed-d6b7-438b-9631-0d03613434d3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0289e9fedb51c0908dc6f9971d9619b8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0289e9fedb51c0908dc6f9971d9619b8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>6ebbedf2db91c0908dc6f9971d961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <value>u_integration_link</value>
+        <variable display_value="">b70256c10b30030085c083eb37673ac3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0289e9fedb51c0908dc6f9971d9619b8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>ce89e9fedb51c0908dc6f9971d9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <value>u_integration_link</value>
+        <variable display_value="">79305e810b30030085c083eb37673a85</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0289e9fedb51c0908dc6f9971d9619b8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>0289e9fedb51c0908dc6f9971d9619b8</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>8689e9fedb51c0908dc6f9971d9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value>u_application=nmbrs^u_target_table=sys_user^u_instance={{subflow.usersysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>0289e9fedb51c0908dc6f9971d9619b8</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>2abbedf2db91c0908dc6f9971d961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bf0256c10b30030085c083eb37673ac0</table>
+        <value>u_application=nmbrs^u_target_table=sys_user^u_instance={{subflow.usersysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0289e9fedb51c0908dc6f9971d9619b8</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>4e89e9fedb51c0908dc6f9971d9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0289e9fedb51c0908dc6f9971d9619b8</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>eabbedf2db91c0908dc6f9971d961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bf0256c10b30030085c083eb37673ac0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Active Schedule from Employee">6d48a97edb51c0908dc6f9971d9619a5</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>6d48a97edb51c0908dc6f9971d9619a5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0289e9fedb51c0908dc6f9971d9619bd</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-11-27 13:10:35</sys_updated_on>
+        <ui_id>603e99b0-5a3f-4c77-b126-2805313f7154</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0289e9fedb51c0908dc6f9971d9619bd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0289e9fedb51c0908dc6f9971d9619bd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>2ebbedf2db91c0908dc6f9971d961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <value/>
+        <variable display_value="">ad48a97edb51c0908dc6f9971d9619a6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0289e9fedb51c0908dc6f9971d9619bd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>8689e9fedb51c0908dc6f9971d9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <value/>
+        <variable display_value="">fd960840db95cc108dc6f9971d96195d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0289e9fedb51c0908dc6f9971d9619bd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employee_id</field>
+        <id>0289e9fedb51c0908dc6f9971d9619bd</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>aabbedf2db91c0908dc6f9971d961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d48a97edb51c0908dc6f9971d9619a5</table>
+        <value>{{02cf1aed-d6b7-438b-9631-0d03613434d3.Record.u_integration_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employee_id</field>
+        <id>0289e9fedb51c0908dc6f9971d9619bd</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>0689e9fedb51c0908dc6f9971d9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d1c5040cdb55cc108dc6f9971d96193c</table>
+        <value>{{02cf1aed-d6b7-438b-9631-0d03613434d3.Record.u_integration_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2cbb6df2db91c0908dc6f9971d961998</block>
+        <comment>Output the schedule</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>schedule</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e4bb6df2db91c0908dc6f9971d961999</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:11</sys_updated_on>
+        <ui_id>b4903228-2506-4f4b-8a8d-6a99973f4f31</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e4bb6df2db91c0908dc6f9971d961999"/>
+    <sys_element_mapping action="delete_multiple" query="id=e4bb6df2db91c0908dc6f9971d961999"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>schedule</field>
+        <id>e4bb6df2db91c0908dc6f9971d961999</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:45</sys_created_on>
+        <sys_id>e4bb6df2db91c0908dc6f9971d96199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_74d865bedb51c0908dc6f9971d9619d2</table>
+        <value>{{603e99b0-5a3f-4c77-b126-2805313f7154.schedulestring}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=74d865bedb51c0908dc6f9971d9619d2^sys_idNOT INf8d865bedb51c0908dc6f9971d9619d3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>74d865bedb51c0908dc6f9971d9619d2</id>
+        <name>Set Employee Schedule</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 10:58:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f8d865bedb51c0908dc6f9971d9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 10:58:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=74d865bedb51c0908dc6f9971d9619d2^sys_idNOT IN7189e9fedb51c0908dc6f9971d9619a2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>usersysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>UserSysId</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</model>
+        <model_id>74d865bedb51c0908dc6f9971d9619d2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_74d865bedb51c0908dc6f9971d9619d2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7189e9fedb51c0908dc6f9971d9619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=74d865bedb51c0908dc6f9971d9619d2^sys_idNOT IN0e89e9fedb51c0908dc6f9971d9619a9"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>schedule</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Schedule</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</model>
+        <model_id>74d865bedb51c0908dc6f9971d9619d2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_74d865bedb51c0908dc6f9971d9619d2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0e89e9fedb51c0908dc6f9971d9619a9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=74d865bedb51c0908dc6f9971d9619d2^sys_idNOT IN0289e9fedb51c0908dc6f9971d9619b8,0289e9fedb51c0908dc6f9971d9619bd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">bf0256c10b30030085c083eb37673ac0</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>bf0256c10b30030085c083eb37673ac0</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0289e9fedb51c0908dc6f9971d9619b8</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-11-27 13:10:35</sys_updated_on>
+        <ui_id>02cf1aed-d6b7-438b-9631-0d03613434d3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0289e9fedb51c0908dc6f9971d9619b8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0289e9fedb51c0908dc6f9971d9619b8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>6ebbedf2db91c0908dc6f9971d961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <value>u_integration_link</value>
+        <variable display_value="">b70256c10b30030085c083eb37673ac3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0289e9fedb51c0908dc6f9971d9619b8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>ce89e9fedb51c0908dc6f9971d9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <value>u_integration_link</value>
+        <variable display_value="">79305e810b30030085c083eb37673a85</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0289e9fedb51c0908dc6f9971d9619b8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>0289e9fedb51c0908dc6f9971d9619b8</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>8689e9fedb51c0908dc6f9971d9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value>u_application=nmbrs^u_target_table=sys_user^u_instance={{subflow.usersysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>0289e9fedb51c0908dc6f9971d9619b8</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>2abbedf2db91c0908dc6f9971d961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bf0256c10b30030085c083eb37673ac0</table>
+        <value>u_application=nmbrs^u_target_table=sys_user^u_instance={{subflow.usersysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0289e9fedb51c0908dc6f9971d9619b8</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>4e89e9fedb51c0908dc6f9971d9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0289e9fedb51c0908dc6f9971d9619b8</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>eabbedf2db91c0908dc6f9971d961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bf0256c10b30030085c083eb37673ac0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Active Schedule from Employee">6d48a97edb51c0908dc6f9971d9619a5</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>6d48a97edb51c0908dc6f9971d9619a5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0289e9fedb51c0908dc6f9971d9619bd</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-11-27 13:10:35</sys_updated_on>
+        <ui_id>603e99b0-5a3f-4c77-b126-2805313f7154</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0289e9fedb51c0908dc6f9971d9619bd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0289e9fedb51c0908dc6f9971d9619bd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>2ebbedf2db91c0908dc6f9971d961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <value/>
+        <variable display_value="">ad48a97edb51c0908dc6f9971d9619a6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0289e9fedb51c0908dc6f9971d9619bd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>8689e9fedb51c0908dc6f9971d9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <value/>
+        <variable display_value="">fd960840db95cc108dc6f9971d96195d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0289e9fedb51c0908dc6f9971d9619bd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employee_id</field>
+        <id>0289e9fedb51c0908dc6f9971d9619bd</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:54</sys_created_on>
+        <sys_id>aabbedf2db91c0908dc6f9971d961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d48a97edb51c0908dc6f9971d9619a5</table>
+        <value>{{02cf1aed-d6b7-438b-9631-0d03613434d3.Record.u_integration_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employee_id</field>
+        <id>0289e9fedb51c0908dc6f9971d9619bd</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_id>0689e9fedb51c0908dc6f9971d9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d1c5040cdb55cc108dc6f9971d96193c</table>
+        <value>{{02cf1aed-d6b7-438b-9631-0d03613434d3.Record.u_integration_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=74d865bedb51c0908dc6f9971d9619d2^sys_idNOT INe4bb6df2db91c0908dc6f9971d961999"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2cbb6df2db91c0908dc6f9971d961998</block>
+        <comment>Output the schedule</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>schedule</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e4bb6df2db91c0908dc6f9971d961999</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:11</sys_updated_on>
+        <ui_id>b4903228-2506-4f4b-8a8d-6a99973f4f31</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e4bb6df2db91c0908dc6f9971d961999"/>
+    <sys_element_mapping action="delete_multiple" query="id=e4bb6df2db91c0908dc6f9971d961999"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>schedule</field>
+        <id>e4bb6df2db91c0908dc6f9971d961999</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:45</sys_created_on>
+        <sys_id>e4bb6df2db91c0908dc6f9971d96199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_74d865bedb51c0908dc6f9971d9619d2</table>
+        <value>{{603e99b0-5a3f-4c77-b126-2805313f7154.schedulestring}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_74d865bedb51c0908dc6f9971d9619d2^sys_idNOT INca89e9fedb51c0908dc6f9971d9619a7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>usersysid</element>
+        <help/>
+        <hint/>
+        <label>UserSysId</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_74d865bedb51c0908dc6f9971d9619d2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ca89e9fedb51c0908dc6f9971d9619a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UserSysId</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_74d865bedb51c0908dc6f9971d9619d2_usersysid_en</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_74d865bedb51c0908dc6f9971d9619d2^sys_idNOT IN8e89e9fedb51c0908dc6f9971d9619b2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>schedule</element>
+        <help/>
+        <hint/>
+        <label>Schedule</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_74d865bedb51c0908dc6f9971d9619d2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e89e9fedb51c0908dc6f9971d9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Schedule</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_74d865bedb51c0908dc6f9971d9619d2_schedule_en</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:01:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=74d865bedb51c0908dc6f9971d9619d2^sys_idNOT IN0bbb2136db91c0908dc6f9971d961910"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"0bbb2136db91c0908dc6f9971d961910","name":"plan"}}</plan>
+        <plan_id display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</plan_id>
+        <snapshot>6b17ca3adb55c0908dc6f9971d961971</snapshot>
+        <sys_class_name>sys_flow_subflow_plan</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>0bbb2136db91c0908dc6f9971d961910</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:10</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Employee Service">fb326f731b4d4c1057a864a07e4bcba1</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get the schedule for the employee and set it in the user object</description>
+        <internal_name>set_employee_schedule</internal_name>
+        <label_cache>[{"name":"603e99b0-5a3f-4c77-b126-2805313f7154.schedule","label":"2➛Schedule","reference_display":"Schedule","type":"object","base_type":"object"},{"name":"603e99b0-5a3f-4c77-b126-2805313f7154.statuscode","label":"2➛Status Code","reference_display":"Status Code","type":"string","base_type":"string"},{"name":"603e99b0-5a3f-4c77-b126-2805313f7154.schedulestring","label":"2➛ScheduleString","reference_display":"ScheduleString","type":"string","base_type":"string"},{"name":"02cf1aed-d6b7-438b-9631-0d03613434d3.Record","label":"1➛Integration Link Record","reference":"u_integration_link","reference_display":"Integration Link","type":"reference","base_type":"reference"},{"name":"02cf1aed-d6b7-438b-9631-0d03613434d3.Table","label":"1➛Integration Link Table","reference":"u_integration_link","reference_display":"Integration Link","type":"table_name","base_type":"table_name"},{"name":"subflow.usersysid","label":"Input➛UserSysId","reference":"","reference_display":"","type":"string","base_type":"string"},{"name":"603e99b0-5a3f-4c77-b126-2805313f7154.response_body","label":"2➛Response Body","reference_display":"Response Body","type":"xml","base_type":"xml"},{"name":"02cf1aed-d6b7-438b-9631-0d03613434d3.Record.u_integration_id","label":"1➛Integration Link Record➛Integration Link ID","reference":"","reference_display":"Integration Link ID","type":"string","base_type":"string","parent_table_name":"u_integration_link","column_name":"u_integration_id"}]</label_cache>
+        <master>true</master>
+        <name>Get Employee Schedule</name>
+        <outputs/>
+        <parent_flow display_value="Get Employee Schedule">74d865bedb51c0908dc6f9971d9619d2</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>32bbedf2db91c0908dc6f9971d96193c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:10</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=32bbedf2db91c0908dc6f9971d96193c"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=32bbedf2db91c0908dc6f9971d96193c^sys_idNOT IN43bbedf2db91c0908dc6f9971d9619e1,47bbedf2db91c0908dc6f9971d9619f2,c7bbedf2db91c0908dc6f9971d9619f6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2cbb6df2db91c0908dc6f9971d961998</block>
+        <comment>Output the schedule</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">32bbedf2db91c0908dc6f9971d96193c</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>schedule</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>43bbedf2db91c0908dc6f9971d9619e1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:10</sys_updated_on>
+        <ui_id>b4903228-2506-4f4b-8a8d-6a99973f4f31</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=43bbedf2db91c0908dc6f9971d9619e1"/>
+    <sys_element_mapping action="delete_multiple" query="id=43bbedf2db91c0908dc6f9971d9619e1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>schedule</field>
+        <id>43bbedf2db91c0908dc6f9971d9619e1</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>c7bbedf2db91c0908dc6f9971d9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_32bbedf2db91c0908dc6f9971d96193c</table>
+        <value>{{603e99b0-5a3f-4c77-b126-2805313f7154.schedulestring}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">bf0256c10b30030085c083eb37673ac0</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <compiled_snapshot>bf0256c10b30030085c083eb37673ac0</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">32bbedf2db91c0908dc6f9971d96193c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47bbedf2db91c0908dc6f9971d9619f2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:10</sys_updated_on>
+        <ui_id>02cf1aed-d6b7-438b-9631-0d03613434d3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=47bbedf2db91c0908dc6f9971d9619f2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>47bbedf2db91c0908dc6f9971d9619f2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>cfbbedf2db91c0908dc6f9971d9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <value>u_integration_link</value>
+        <variable display_value="">b70256c10b30030085c083eb37673ac3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=47bbedf2db91c0908dc6f9971d9619f2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>47bbedf2db91c0908dc6f9971d9619f2</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>8bbbedf2db91c0908dc6f9971d9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bf0256c10b30030085c083eb37673ac0</table>
+        <value>u_application=nmbrs^u_target_table=sys_user^u_instance={{subflow.usersysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>47bbedf2db91c0908dc6f9971d9619f2</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>4fbbedf2db91c0908dc6f9971d9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bf0256c10b30030085c083eb37673ac0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Active Schedule from Employee">6d48a97edb51c0908dc6f9971d9619a5</action_type>
+        <action_type_parent display_value="Get Active Schedule from Employee">d1c5040cdb55cc108dc6f9971d96193c</action_type_parent>
+        <comment/>
+        <compiled_snapshot>6d48a97edb51c0908dc6f9971d9619a5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">32bbedf2db91c0908dc6f9971d96193c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c7bbedf2db91c0908dc6f9971d9619f6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:10</sys_updated_on>
+        <ui_id>603e99b0-5a3f-4c77-b126-2805313f7154</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c7bbedf2db91c0908dc6f9971d9619f6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c7bbedf2db91c0908dc6f9971d9619f6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>87bbedf2db91c0908dc6f9971d9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <value/>
+        <variable display_value="">ad48a97edb51c0908dc6f9971d9619a6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c7bbedf2db91c0908dc6f9971d9619f6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employee_id</field>
+        <id>c7bbedf2db91c0908dc6f9971d9619f6</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>07bbedf2db91c0908dc6f9971d9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d48a97edb51c0908dc6f9971d9619a5</table>
+        <value>{{02cf1aed-d6b7-438b-9631-0d03613434d3.Record.u_integration_id}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=32bbedf2db91c0908dc6f9971d96193c^sys_idNOT INfebbedf2db91c0908dc6f9971d96193c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>32bbedf2db91c0908dc6f9971d96193c</id>
+        <name>Set Employee Schedule</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>febbedf2db91c0908dc6f9971d96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=32bbedf2db91c0908dc6f9971d96193c^sys_idNOT IN36bbedf2db91c0908dc6f9971d96193e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>usersysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>UserSysId</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Employee Schedule">32bbedf2db91c0908dc6f9971d96193c</model>
+        <model_id>32bbedf2db91c0908dc6f9971d96193c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_32bbedf2db91c0908dc6f9971d96193c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>36bbedf2db91c0908dc6f9971d96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=32bbedf2db91c0908dc6f9971d96193c^sys_idNOT IN7ebbedf2db91c0908dc6f9971d9619a1"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>schedule</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Schedule</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Employee Schedule">32bbedf2db91c0908dc6f9971d96193c</model>
+        <model_id>32bbedf2db91c0908dc6f9971d96193c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_32bbedf2db91c0908dc6f9971d96193c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7ebbedf2db91c0908dc6f9971d9619a1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=32bbedf2db91c0908dc6f9971d96193c^sys_idNOT IN47bbedf2db91c0908dc6f9971d9619f2,c7bbedf2db91c0908dc6f9971d9619f6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">bf0256c10b30030085c083eb37673ac0</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <compiled_snapshot>bf0256c10b30030085c083eb37673ac0</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">32bbedf2db91c0908dc6f9971d96193c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47bbedf2db91c0908dc6f9971d9619f2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:10</sys_updated_on>
+        <ui_id>02cf1aed-d6b7-438b-9631-0d03613434d3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=47bbedf2db91c0908dc6f9971d9619f2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>47bbedf2db91c0908dc6f9971d9619f2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>cfbbedf2db91c0908dc6f9971d9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <value>u_integration_link</value>
+        <variable display_value="">b70256c10b30030085c083eb37673ac3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=47bbedf2db91c0908dc6f9971d9619f2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>47bbedf2db91c0908dc6f9971d9619f2</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>8bbbedf2db91c0908dc6f9971d9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bf0256c10b30030085c083eb37673ac0</table>
+        <value>u_application=nmbrs^u_target_table=sys_user^u_instance={{subflow.usersysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>47bbedf2db91c0908dc6f9971d9619f2</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>4fbbedf2db91c0908dc6f9971d9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bf0256c10b30030085c083eb37673ac0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Active Schedule from Employee">6d48a97edb51c0908dc6f9971d9619a5</action_type>
+        <action_type_parent display_value="Get Active Schedule from Employee">d1c5040cdb55cc108dc6f9971d96193c</action_type_parent>
+        <comment/>
+        <compiled_snapshot>6d48a97edb51c0908dc6f9971d9619a5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">32bbedf2db91c0908dc6f9971d96193c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c7bbedf2db91c0908dc6f9971d9619f6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:10</sys_updated_on>
+        <ui_id>603e99b0-5a3f-4c77-b126-2805313f7154</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c7bbedf2db91c0908dc6f9971d9619f6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c7bbedf2db91c0908dc6f9971d9619f6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>87bbedf2db91c0908dc6f9971d9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <value/>
+        <variable display_value="">ad48a97edb51c0908dc6f9971d9619a6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c7bbedf2db91c0908dc6f9971d9619f6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employee_id</field>
+        <id>c7bbedf2db91c0908dc6f9971d9619f6</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>07bbedf2db91c0908dc6f9971d9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d48a97edb51c0908dc6f9971d9619a5</table>
+        <value>{{02cf1aed-d6b7-438b-9631-0d03613434d3.Record.u_integration_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=32bbedf2db91c0908dc6f9971d96193c^sys_idNOT IN43bbedf2db91c0908dc6f9971d9619e1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2cbb6df2db91c0908dc6f9971d961998</block>
+        <comment>Output the schedule</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Get Employee Schedule">32bbedf2db91c0908dc6f9971d96193c</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>schedule</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>43bbedf2db91c0908dc6f9971d9619e1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:11:10</sys_updated_on>
+        <ui_id>b4903228-2506-4f4b-8a8d-6a99973f4f31</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=43bbedf2db91c0908dc6f9971d9619e1"/>
+    <sys_element_mapping action="delete_multiple" query="id=43bbedf2db91c0908dc6f9971d9619e1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>schedule</field>
+        <id>43bbedf2db91c0908dc6f9971d9619e1</id>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_id>c7bbedf2db91c0908dc6f9971d9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_32bbedf2db91c0908dc6f9971d96193c</table>
+        <value>{{603e99b0-5a3f-4c77-b126-2805313f7154.schedulestring}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_32bbedf2db91c0908dc6f9971d96193c^sys_idNOT INfebbedf2db91c0908dc6f9971d961943"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>usersysid</element>
+        <help/>
+        <hint/>
+        <label>UserSysId</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_32bbedf2db91c0908dc6f9971d96193c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>febbedf2db91c0908dc6f9971d961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UserSysId</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_32bbedf2db91c0908dc6f9971d96193c_usersysid_en</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_32bbedf2db91c0908dc6f9971d96193c^sys_idNOT IN0fbbedf2db91c0908dc6f9971d9619dc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>schedule</element>
+        <help/>
+        <hint/>
+        <label>Schedule</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_32bbedf2db91c0908dc6f9971d96193c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:10:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0fbbedf2db91c0908dc6f9971d9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Schedule</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_32bbedf2db91c0908dc6f9971d96193c_schedule_en</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:10:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

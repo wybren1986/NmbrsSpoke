@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:29:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>729f61badb91c0908dc6f9971d96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.timecard_approver</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_ui_action display_value="Get Time schedule">9f6ee57adb91c0908dc6f9971d961922</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_729f61badb91c0908dc6f9971d96190a</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:29:24</sys_updated_on>
+        <sys_user_role display_value="timecard_approver" name="timecard_approver">e1768f9193b6220064f572edb67ffb40</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

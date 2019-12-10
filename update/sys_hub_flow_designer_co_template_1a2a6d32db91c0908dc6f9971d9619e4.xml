@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template">
+    <sys_hub_flow_designer_co_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <complex_definition>FD9fa061326751c0905a7e3cc8a22591c1</complex_definition>
+        <sys_class_name>sys_hub_flow_designer_co_template</sys_class_name>
+        <sys_created_by>wybren.vanbeemdelust@bnc.nl</sys_created_by>
+        <sys_created_on>2019-11-27 11:04:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1a2a6d32db91c0908dc6f9971d9619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ActiveSchedule</sys_name>
+        <sys_package display_value="Nmbrs Spoke" source="x_bocn_nmbrs_spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Nmbrs Spoke">d2ef9f771b0d4c1057a864a07e4bcbc8</sys_scope>
+        <sys_update_name>sys_hub_flow_designer_co_template_1a2a6d32db91c0908dc6f9971d9619e4</sys_update_name>
+        <sys_updated_by>wybren.vanbeemdelust@bnc.nl</sys_updated_by>
+        <sys_updated_on>2019-11-27 11:04:03</sys_updated_on>
+        <template_label>ActiveSchedule</template_label>
+        <template_name>activeschedule</template_name>
+    </sys_hub_flow_designer_co_template>
+</record_update>
